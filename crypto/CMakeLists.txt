@@ -53,7 +53,7 @@ endif()
 configure_file( ${CMAKE_CURRENT_BINARY_DIR}/opensslconf.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/openssl/opensslconf.h )
 
 set( LIBSRC cryptlib.c mem.c mem_clr.c mem_dbg.c cversion.c ex_data.c cpt_err.c
-  ebcdic.c uid.c o_time.c o_str.c o_dir.c o_init.c )
+  ebcdic.c uid.c o_time.c o_str.c o_dir.c o_init.c o_fips.c )
 
 include_directories( ${CMAKE_CURRENT_BINARY_DIR} .. ../include . asn1 evp modes )
 
